@@ -42,8 +42,17 @@ namespace fitness_tracker
 
         public void GetDate()
         {
-
             date_box.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        Window1 popupWindow = new Window1();
+        private void plus_Click(object sender, RoutedEventArgs e)
+        {
+            
+            if(!popupWindow.IsActive)
+            {
+                popupWindow.Show();
+            }
         }
     }
 }

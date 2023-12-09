@@ -44,6 +44,11 @@
                             <Button Style="{StaticResource menuButton}">
                                 <Icon:PackIconMaterial Kind="AlarmMultiple" Style="{StaticResource menuButtonIcon}"/>
                             </Button>
+                            
+                            <Button x:Name="plus" Click="plus_Click" Style="{StaticResource menuButton}" ToolTip="Add calories">
+                                <Icon:PackIconMaterial Kind="Plus" Style="{StaticResource menuButtonIcon}"/>
+                            </Button>
+                            
                         </StackPanel>
 
                         <StackPanel VerticalAlignment="Bottom">

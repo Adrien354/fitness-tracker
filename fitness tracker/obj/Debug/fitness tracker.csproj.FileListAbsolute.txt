@@ -30,3 +30,5 @@ C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\UserContro
 C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\UserControls\TextInfo.g.cs
 C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker_MarkupCompile.lref
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\AddCaloriesWindow.baml
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\AddCaloriesWindow.g.cs
