@@ -42,9 +42,8 @@ namespace fitness_tracker
 
         public void GetDate()
         {
-            var date = DateTime.Now;
 
-            date_box.Text = $"{date.Hour}:{date.Minute}:{date.Second}";
+            date_box.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }
