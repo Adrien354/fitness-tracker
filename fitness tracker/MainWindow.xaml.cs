@@ -2,13 +2,14 @@
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Forms;
+using System.ComponentModel;
+using System.Runtime.InteropServices;
 
 
 namespace fitness_tracker
 {
     public partial class MainWindow : Window
     {
-
         public MainWindow()
         {
             InitializeComponent();
@@ -48,7 +49,6 @@ namespace fitness_tracker
         Window1 popupWindow = new Window1();
         private void plus_Click(object sender, RoutedEventArgs e)
         {
-            
             if(!popupWindow.IsActive)
             {
                 popupWindow.Show();

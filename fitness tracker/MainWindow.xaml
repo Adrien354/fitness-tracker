@@ -165,7 +165,7 @@
 
                                 <!--Text Info Cards-->
                                 <uc:TextInfo TextTop="Meals eated" TextMiddle="4" TextBottom="Monday" IsActive="False"/>
-                                <uc:TextInfo TextTop="Total Calories" TextMiddle="3754 kcal" TextBottom="Monday" IsActive="True" Grid.Column="1"/>
+                                <uc:TextInfo x:FieldModifier="public" x:Name="calorie_text_info" TextTop="Total Calories" TextMiddle="" TextBottom="Monday" IsActive="True" Grid.Column="1"/>
                                 <uc:TextInfo TextTop="Calories Target" TextMiddle="3500 kcal" TextBottom="Monday" IsActive="False" Grid.Column="2"/>
 
                             </Grid>
