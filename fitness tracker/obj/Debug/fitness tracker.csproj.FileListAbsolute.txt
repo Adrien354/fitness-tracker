@@ -1,0 +1,32 @@
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\fitness tracker.exe.config
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\fitness tracker.exe
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\fitness tracker.pdb
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\LiveCharts.dll
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\LiveCharts.pdb
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\LiveCharts.xml
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker.csproj.AssemblyReference.cache
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\MainWindow.baml
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\MainWindow.g.cs
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\App.g.cs
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker_MarkupCompile.cache
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker.g.resources
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness_tracker.Properties.Resources.resources
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker.csproj.GenerateResource.cache
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker.csproj.CoreCompileInputs.cache
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker.csproj.CopyComplete
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker.exe
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker.pdb
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\App.baml
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\UserControls\TextInfo.baml
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\UserControls\TextInfo.g.cs
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker_MarkupCompile.lref
