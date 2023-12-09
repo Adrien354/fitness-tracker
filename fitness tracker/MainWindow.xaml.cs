@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Forms;
 
 
 namespace fitness_tracker
 {
     public partial class MainWindow : Window
     {
-        static float timer = 1;
 
         public MainWindow()
         {
             InitializeComponent();
 
             GetDate();
+
+            InitTimer();
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -24,9 +26,25 @@ namespace fitness_tracker
             }
         }
 
+        private Timer timer1;
+        public void InitTimer()
+        {
+            timer1 = new Timer();
+            timer1.Tick += new EventHandler(timer1_Tick);
+            timer1.Interval = 1000; // in miliseconds
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            GetDate();
+        }
+
         public void GetDate()
         {
-            date_box.Text = DateTime.Now.ToString();
+            var date = DateTime.Now;
+
+            date_box.Text = $"{date.Hour}:{date.Minute}:{date.Second}";
         }
     }
 }
