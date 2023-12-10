@@ -11,7 +11,6 @@ namespace fitness_tracker
 {
     public partial class Window1 : Window
     {
-
         public Window1()
         {
             InitializeComponent();
@@ -26,24 +25,35 @@ namespace fitness_tracker
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            FormsyxD xd = new FormsyxD();
-
             int calories = int.Parse(calories_add.Text);
 
-            if (calories < 0)
+            foreach (Window window in Application.Current.Windows)
             {
-                System.Windows.MessageBox.Show("Calories cannot be negative");
-            }
-            else
-            {
-                xd.Form.calorie_text_info.TextMiddle += calories;
+                if (window.GetType() == typeof(MainWindow))
+                {
+                    if (calories < 1)
+                    {
+                        System.Windows.MessageBox.Show("You can't add 0 or less calories");
+                    }
+
+                    int actual_calories = int.Parse((window as MainWindow).Calories);
+
+                    calories += actual_calories;
+
+                    if (calories > 15000)
+                    {
+                        System.Windows.MessageBox.Show("It's not possible to have that much calories in one day");
+                    }
+                    else
+                    {
+                            (window as MainWindow).Calories = calories.ToString();
+                    }
+
+                    (window as MainWindow).count_windows_open = 0;
+                }
             }
 
+            this.Close();
         }
-    }
-
-    public class FormsyxD
-    {
-        public MainWindow Form = Application.Current.Windows[Application.Current.Windows.Count - 1] as MainWindow;
     }
 }

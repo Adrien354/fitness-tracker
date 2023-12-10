@@ -4,15 +4,36 @@ using System.Windows.Input;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+using System.Linq;
 
 
 namespace fitness_tracker
 {
     public partial class MainWindow : Window
     {
+        public static readonly DependencyProperty CaloriesProperty =
+        DependencyProperty.Register("Calories", typeof(string), typeof(Window), new PropertyMetadata(null));
+
+        public string Calories
+        {
+            get { return (string)GetValue(CaloriesProperty); }
+            set { SetValue(CaloriesProperty, value); }
+        }
+
+        public static readonly DependencyProperty DateDayProperty =
+        DependencyProperty.Register("DateDay", typeof(string), typeof(Window), new PropertyMetadata(null));
+
+        public string DateDay
+        {
+            get { return (string)GetValue(DateDayProperty); }
+            set { SetValue(DateDayProperty, value); }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+            Calories = "0";
+            DateDay = DateTime.Now.ToString("dddd");
 
             GetDate();
 
@@ -46,13 +67,30 @@ namespace fitness_tracker
             date_box.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
-        Window1 popupWindow = new Window1();
+        public int count_windows_open
+        {
+            get;
+            set;
+        }
         private void plus_Click(object sender, RoutedEventArgs e)
         {
-            if(!popupWindow.IsActive)
+            
+            if (count_windows_open == 0)
             {
+                Window1 popupWindow = new Window1();
                 popupWindow.Show();
+                count_windows_open++;
             }
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+    }
+
+    public class TextboxText
+    {
+        public string textdata { get; set; }
     }
 }

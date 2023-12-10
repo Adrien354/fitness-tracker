@@ -5,7 +5,8 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:uc="clr-namespace:fitness_tracker.UserControls"
         Height="700" Width="1280" Background="Transparent" ResizeMode="NoResize"
-        AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen">
+        AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        x:Name="CurrentWindow">
     <Border Background="#cfd5e5" CornerRadius="40" BorderThickness="2" BorderBrush="#ebedf3"
             Padding="20" MouseDown="Border_MouseDown">
         <Border CornerRadius="40">
@@ -58,7 +59,7 @@
 
                             <Separator Background="#877cc5" Margin="20 10 20 10" Height="0.8" VerticalAlignment="Bottom"/>
 
-                            <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom">
+                            <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" Click="Exit_Click">
                                 <Icon:PackIconMaterial Kind="LocationExit" Style="{StaticResource menuButtonIcon}"/>
                             </Button>
                         </StackPanel>
@@ -164,9 +165,9 @@
                                 </Grid.ColumnDefinitions>
 
                                 <!--Text Info Cards-->
-                                <uc:TextInfo TextTop="Meals eated" TextMiddle="4" TextBottom="Monday" IsActive="False"/>
-                                <uc:TextInfo x:FieldModifier="public" x:Name="calorie_text_info" TextTop="Total Calories" TextMiddle="" TextBottom="Monday" IsActive="True" Grid.Column="1"/>
-                                <uc:TextInfo TextTop="Calories Target" TextMiddle="3500 kcal" TextBottom="Monday" IsActive="False" Grid.Column="2"/>
+                                <uc:TextInfo TextTop="Meals eated" TextMiddle="4" TextBottom="{Binding DateDay, ElementName=CurrentWindow}" IsActive="False"/>
+                                <uc:TextInfo x:Name="calorie_text_info" TextTop="Total Calories" TextMiddle="{Binding Calories, ElementName=CurrentWindow}" TextBottom="{Binding DateDay, ElementName=CurrentWindow}" IsActive="True" Grid.Column="1"/>
+                                <uc:TextInfo TextTop="Calories Target" TextMiddle="3500 kcal" TextBottom="{Binding DateDay, ElementName=CurrentWindow}" IsActive="False" Grid.Column="2"/>
 
                             </Grid>
 
@@ -220,7 +221,7 @@
                                     </StackPanel>
                                 </Border>
 
-                                <uc:TextInfo Height="100" VerticalAlignment="top" Grid.Row="1" TextTop="Total Calories" TextMiddle="3754 kcal" TextBottom="Monday" HorizontalAlignment="Left" Margin="20"/>
+                                <uc:TextInfo x:Name="calorie_text_info2" Height="100" VerticalAlignment="top" Grid.Row="1" TextTop="Total Calories" TextMiddle="{Binding Calories, ElementName=CurrentWindow}" TextBottom="{Binding DateDay, ElementName=CurrentWindow}" HorizontalAlignment="Left" Margin="20"/>
                             </Grid>
                         </Border>
 
@@ -229,6 +230,7 @@
                                 <Border Background="#FD7193" CornerRadius="22" Width="70" Height="70" Margin="17" BorderThickness="1" BorderBrush="pink">
                                     <Icon:PackIconMaterial Kind="Calendar" Width="35" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                                 </Border>
+                                <TextBlock Text="{Binding DateDay, ElementName=CurrentWindow}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20" FontSize="20" FontWeight="SemiBold" Foreground="White"></TextBlock>
                                 <TextBlock x:Name="date_box" Text="" FontSize="20" FontWeight="SemiBold" Foreground="White" VerticalAlignment="Center"/>
                             </StackPanel>
                         </Border>
