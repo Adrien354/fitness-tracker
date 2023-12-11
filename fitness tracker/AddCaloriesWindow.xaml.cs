@@ -55,5 +55,10 @@ namespace fitness_tracker
 
             this.Close();
         }
+
+        private void calories_add_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            calories_add.IsEnabled = calories_add.Text.Length > 0 ? true : false;
+        }
     }
 }
