@@ -32,3 +32,38 @@ C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\GeneratedI
 C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\fitness tracker_MarkupCompile.lref
 C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\AddCaloriesWindow.baml
 C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\AddCaloriesWindow.g.cs
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\fitness tracker.exe.config
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\fitness tracker.exe
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\fitness tracker.pdb
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\LiveCharts.dll
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\LiveCharts.Wpf.dll
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\LiveCharts.pdb
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\LiveCharts.xml
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\LiveCharts.Wpf.pdb
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\LiveCharts.Wpf.xml
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+D:\fitness\fitness-tracker\fitness tracker\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker.csproj.AssemblyReference.cache
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker.csproj.SuggestedBindingRedirects.cache
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\UserControls\TextInfo.baml
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\AddCaloriesWindow.baml
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\App.baml
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\MainWindow.g.cs
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\UserControls\TextInfo.g.cs
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\AddCaloriesWindow.g.cs
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\App.g.cs
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker_MarkupCompile.cache
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker_MarkupCompile.lref
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\MainWindow.baml
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker.g.resources
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness_tracker.Properties.Resources.resources
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker.csproj.GenerateResource.cache
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker.csproj.CoreCompileInputs.cache
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker.csproj.CopyComplete
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker.exe
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\fitness tracker.pdb

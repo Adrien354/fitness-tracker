@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows;
 using System.Windows.Forms;
@@ -31,6 +32,8 @@ namespace fitness_tracker
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
+                    
+
                     if (calories < 1)
                     {
                         System.Windows.MessageBox.Show("You can't add 0 or less calories");
@@ -46,7 +49,15 @@ namespace fitness_tracker
                     }
                     else
                     {
-                            (window as MainWindow).Calories = calories.ToString();
+                        (window as MainWindow).Calories = calories.ToString();
+
+                        if (File.ReadAllText("calories.txt").Contains(DateTime.Now.ToString("dddd dd/MM/yy")) && !File.ReadAllText("D:/calories.txt").Contains("Calories:")){
+                            File.AppendAllText("calories.txt", $" Calories:{(window as MainWindow).Calories}kcal");
+                        }
+                        else
+                        {
+                            File.WriteAllText("calories.txt", DateTime.Now.ToString($"dddd dd/MM/yy ") + $"Calories:{(window as MainWindow).Calories}kcal" + Environment.NewLine);
+                        }
                     }
 
                     (window as MainWindow).count_windows_open = 0;

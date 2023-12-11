@@ -7,13 +7,13 @@
         Height="700" Width="1280" Background="Transparent" ResizeMode="NoResize"
         AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen"
         x:Name="CurrentWindow">
-    <Border Background="#cfd5e5" CornerRadius="40" BorderThickness="2" BorderBrush="#ebedf3"
+    <Border Background="#505050" CornerRadius="40" BorderThickness="2" BorderBrush="#6e4f5d"
             Padding="20" MouseDown="Border_MouseDown">
         <Border CornerRadius="40">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#fefefe" Offset="0" />
-                    <GradientStop Color="#ededef" Offset="1" />
+                    <GradientStop Color="#202020" Offset="0" />
+                    <GradientStop Color="#101010" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
             
