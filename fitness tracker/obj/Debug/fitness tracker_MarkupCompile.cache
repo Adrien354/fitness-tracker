@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\obj\Debug\
+D:\fitness\fitness-tracker\fitness tracker\obj\Debug\
 fitness_tracker
 none
 false
 DEBUG;TRACE
-C:\Users\adrqw\source\repos\fitness tracker\fitness tracker\App.xaml
+D:\fitness\fitness-tracker\fitness tracker\App.xaml
 3420415410
 
 7-771746424
-18-922920076
+18-631207500
 MainWindow.xaml;UserControls\TextInfo.xaml;AddCaloriesWindow.xaml;
 
 False

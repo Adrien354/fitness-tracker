@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Linq;
-
+using System.IO;
 
 namespace fitness_tracker
 {
@@ -34,6 +34,25 @@ namespace fitness_tracker
             InitializeComponent();
             Calories = "0";
             DateDay = DateTime.Now.ToString("dddd");
+
+
+            if (!File.Exists("D:/calories.txt")){
+                File.Create("D:/calories.txt");
+                File.WriteAllText("D:/calories.txt", DateTime.Now.ToString("dddd dd/MM/yy") + $"Calories:{Calories}kcal" + Environment.NewLine);
+            }
+
+            string calories_txt_file = File.ReadAllText("D:/calories.txt");
+
+            if (!calories_txt_file.Contains(DateTime.Now.ToString("dddd dd/MM/yy")))
+            {
+                File.AppendAllText("D:/calories.txt", DateTime.Now.ToString($"dddd dd/MM/yy ") + $"Calories:{Calories}kcal" + Environment.NewLine);
+                Calories = "0";
+            }
+
+            calories_txt_file = File.ReadAllText("D:/calories.txt");
+
+            Calories = calories_txt_file.Substring(calories_txt_file.IndexOf(":", 0) + 1, calories_txt_file.IndexOf("kcal", 0) - calories_txt_file.IndexOf(":", 0) - 1);
+
 
             GetDate();
 
