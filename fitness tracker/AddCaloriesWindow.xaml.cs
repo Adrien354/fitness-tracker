@@ -32,9 +32,6 @@ namespace fitness_tracker
             {
                 if (window.GetType() == typeof(MainWindow))
                 {
-                    
-
-
 
                     int actual_calories = int.Parse((window as MainWindow).Calories);
 

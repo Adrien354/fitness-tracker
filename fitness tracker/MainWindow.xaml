@@ -83,9 +83,9 @@
                     </Grid.ColumnDefinitions>
 
                     <!--Title Section-->
-                    <StackPanel Margin="7 10 0 25">
-                        <TextBlock Text="Primary" Foreground="#797295" FontSize="13"/>
-                        <TextBlock Text="Dashboard" Style="{StaticResource titleText}"/>
+                    <StackPanel Margin="7 10 0 25" Orientation="Horizontal">
+                        <TextBlock Text="CalorieTrackerX" Style="{StaticResource titleText}"/>
+                        <Image Width="40" Height="40" Source="x.png"/>
                     </StackPanel>
 
 
