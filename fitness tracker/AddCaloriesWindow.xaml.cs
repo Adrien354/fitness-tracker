@@ -50,7 +50,7 @@ namespace fitness_tracker
                     }
                     else
                     {
-                        (window as MainWindow).Calories = calories.ToString();
+                        (window as MainWindow).Calories = actual_calories.ToString();
                         int count_meals = int.Parse((window as MainWindow).MealsEated);
                         count_meals += 1;
                         (window as MainWindow).MealsEated = count_meals.ToString();
