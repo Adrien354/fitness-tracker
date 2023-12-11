@@ -48,14 +48,27 @@ Aplikacja w WPF
 # Dodawanie Kalorii krok po kroku:
 
 1
-   ![Appearance_click](https://github.com/Adrien354/fitness-tracker/blob/master/screenshots/button_click_appearance.png)
+![Appearance_click](https://github.com/Adrien354/fitness-tracker/blob/master/screenshots/button_click_appearance.png)
+
+2
+<br/><br/>
+![calories_add](https://github.com/Adrien354/fitness-tracker/blob/master/screenshots/calories_add.png)
+
+3
+<br/><br/>
+![calories_add](https://github.com/Adrien354/fitness-tracker/blob/master/screenshots/wykres.png)
+
+4
+<br/><br/>
+![my_calories](https://github.com/Adrien354/fitness-tracker/blob/master/screenshots/my_calories.png)
 
 # Funkcja dodająca kalorie:
 
+![buttonclick](https://github.com/Adrien354/fitness-tracker/blob/master/screenshots/buttonClick.png)
 
-### Tworzenie pliku, gdzie są zapisywane
+### Tworzenie pliku, gdzie są zapisywane kalorie z danego dnia
 
-### kalorie z danego dnia
+![zapisywanie](https://github.com/Adrien354/fitness-tracker/blob/master/screenshots/saving_to_file.png)
 
 **Jest tutaj również zaimplementowane
 odczytywanie z tego pliku i wyświetlanie tego na
@@ -65,8 +78,11 @@ stronie, co zostało ukazane w slajdzie nr.**
 # Zegar i data oraz jego kod
 
 
+![Calendar](https://github.com/Adrien354/fitness-tracker/blob/master/screenshots/Calendar.png)
+<br></br>
+![Date](https://github.com/Adrien354/fitness-tracker/blob/master/screenshots/Date.png)
+
 # Koniec
 
-- Adrian Filipek
-- Szymon Dacków
-- 3p
+- Adrian Filipek 3p
+- Szymon Dacków 3p
