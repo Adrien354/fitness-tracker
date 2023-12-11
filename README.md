@@ -21,7 +21,7 @@ Aplikacja w WPF
 # Jak został napisany wygląd
 
 - Został on utworzony na gridach
-- Zostały użyte StackPanele
+- Zostały użyte StachPanele
 - Większość kontrolek to TextBlock oraz buttony
 - Znajduję się w pliku MainWindow.xaml
 - Biblioteka LifeCharts
