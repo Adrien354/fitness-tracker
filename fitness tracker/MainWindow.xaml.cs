@@ -29,29 +29,42 @@ namespace fitness_tracker
             set { SetValue(DateDayProperty, value); }
         }
 
+        public static readonly DependencyProperty MealsEatedProperty =
+        DependencyProperty.Register("MealsEated", typeof(string), typeof(Window), new PropertyMetadata(null));
+
+        public string MealsEated
+        {
+            get { return (string)GetValue(MealsEatedProperty); }
+            set { SetValue(MealsEatedProperty, value); }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
             Calories = "0";
+            MealsEated = "0";
             DateDay = DateTime.Now.ToString("dddd");
 
 
             if (!File.Exists("calories.txt")){
                 File.Create("calories.txt");
-                File.WriteAllText("calories.txt", DateTime.Now.ToString("dddd dd/MM/yy") + $"Calories:{Calories}kcal" + Environment.NewLine);
-            }
 
+                System.Windows.MessageBox.Show("Re-open this app to get it properly running");
+                System.Windows.Application.Current.Shutdown();
+            }
             string calories_txt_file = File.ReadAllText("calories.txt");
 
             if (!calories_txt_file.Contains(DateTime.Now.ToString("dddd dd/MM/yy")))
             {
-                File.AppendAllText("calories.txt", DateTime.Now.ToString($"dddd dd/MM/yy ") + $"Calories:{Calories}kcal" + Environment.NewLine);
+                File.WriteAllText("calories.txt", DateTime.Now.ToString($"dddd dd/MM/yy ") + $"Calories:{Calories}kcal and{MealsEated}meals eated" + Environment.NewLine);
                 Calories = "0";
+                MealsEated = "0";
             }
 
             calories_txt_file = File.ReadAllText("calories.txt");
 
             Calories = calories_txt_file.Substring(calories_txt_file.IndexOf(":", 0) + 1, calories_txt_file.IndexOf("kcal", 0) - calories_txt_file.IndexOf(":", 0) - 1);
+            MealsEated = calories_txt_file.Substring(calories_txt_file.IndexOf("and", 0) + 3, calories_txt_file.IndexOf("meals", 0) - calories_txt_file.IndexOf("and", 0) - 3);
 
 
             GetDate();

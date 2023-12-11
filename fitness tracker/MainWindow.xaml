@@ -165,7 +165,7 @@
                                 </Grid.ColumnDefinitions>
 
                                 <!--Text Info Cards-->
-                                <uc:TextInfo TextTop="Meals eated" TextMiddle="4" TextBottom="{Binding DateDay, ElementName=CurrentWindow}" IsActive="False"/>
+                                <uc:TextInfo x:Name="meals_txt_info" TextTop="Meals eated" TextMiddle="{Binding MealsEated, ElementName=CurrentWindow}" TextBottom="{Binding DateDay, ElementName=CurrentWindow}" IsActive="False"/>
                                 <uc:TextInfo x:Name="calorie_text_info" TextTop="Total Calories" TextMiddle="{Binding Calories, ElementName=CurrentWindow}" TextBottom="{Binding DateDay, ElementName=CurrentWindow}" IsActive="True" Grid.Column="1"/>
                                 <uc:TextInfo TextTop="Calories Target" TextMiddle="3500 kcal" TextBottom="{Binding DateDay, ElementName=CurrentWindow}" IsActive="False" Grid.Column="2"/>
 

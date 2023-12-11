@@ -34,30 +34,27 @@ namespace fitness_tracker
                 {
                     
 
+
+
+                    int actual_calories = int.Parse((window as MainWindow).Calories);
+
+                    actual_calories += calories;
+
                     if (calories < 1)
                     {
                         System.Windows.MessageBox.Show("You can't add 0 or less calories");
                     }
-
-                    int actual_calories = int.Parse((window as MainWindow).Calories);
-
-                    calories += actual_calories;
-
-                    if (calories > 15000)
+                    else if (actual_calories > 15000)
                     {
                         System.Windows.MessageBox.Show("It's not possible to have that much calories in one day");
                     }
                     else
                     {
                         (window as MainWindow).Calories = calories.ToString();
-
-                        if (File.ReadAllText("calories.txt").Contains(DateTime.Now.ToString("dddd dd/MM/yy")) && !File.ReadAllText("D:/calories.txt").Contains("Calories:")){
-                            File.AppendAllText("calories.txt", $" Calories:{(window as MainWindow).Calories}kcal");
-                        }
-                        else
-                        {
-                            File.WriteAllText("calories.txt", DateTime.Now.ToString($"dddd dd/MM/yy ") + $"Calories:{(window as MainWindow).Calories}kcal" + Environment.NewLine);
-                        }
+                        int count_meals = int.Parse((window as MainWindow).MealsEated);
+                        count_meals += 1;
+                        (window as MainWindow).MealsEated = count_meals.ToString();
+                        File.WriteAllText("calories.txt", DateTime.Now.ToString($"dddd dd/MM/yy ") + $"Calories:{(window as MainWindow).Calories}kcal and{(window as MainWindow).MealsEated}meals eated" + Environment.NewLine);
                     }
 
                     (window as MainWindow).count_windows_open = 0;
@@ -69,7 +66,7 @@ namespace fitness_tracker
 
         private void calories_add_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
-            calories_add.IsEnabled = calories_add.Text.Length > 0 ? true : false;
+            Button_calories_add.IsEnabled = calories_add.Text.Length > 0 ? true : false;
         }
     }
 }
