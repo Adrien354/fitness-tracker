@@ -85,7 +85,7 @@
                     <!--Title Section-->
                     <StackPanel Margin="7 10 0 25" Orientation="Horizontal">
                         <TextBlock Text="CalorieTrackerX" Style="{StaticResource titleText}"/>
-                        <Image Width="40" Height="40" Source="x.png"/>
+                        <Image Width="40" Height="40" Source="/x.png" Margin="10"/>
                     </StackPanel>
 
 
